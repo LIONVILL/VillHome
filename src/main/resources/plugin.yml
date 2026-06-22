@@ -1,0 +1,36 @@
+name: VillHome
+version: 1.0.0
+main: com.villhome.VillHomePlugin
+api-version: "1.21"
+description: Home management plugin with group limits and PlaceholderAPI support
+authors: [Villoni, t.me/VilloniQ]
+
+softdepend:
+  - PlaceholderAPI
+  - LuckPerms
+
+permissions:
+  villhome.player:
+    description: home, sethome, delhome
+    default: true
+  villhome.admin:
+    description: vh commands
+    default: op
+
+commands:
+  home:
+    description: Teleport to your home
+    usage: /home <name>
+    permission: villhome.player
+  sethome:
+    description: Set a home at your current location
+    usage: /sethome <name>
+    permission: villhome.player
+  delhome:
+    description: Delete your home
+    usage: /delhome <name>
+    permission: villhome.player
+  vh:
+    description: VillHome admin commands
+    usage: /vh <subcommand>
+    permission: villhome.admin

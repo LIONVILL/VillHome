@@ -1,0 +1,42 @@
+# VillHome Configuration
+# Coded by Villoni (all questions: t.me/VilloniQ)
+
+group-limits:
+  default: 2
+  killer: 4
+  marauder: 7
+
+prefix: "§x§f§d§4§1§5§3● VillHome §r§f⮕ "
+accent-color: "§x§f§d§4§1§5§3"
+
+messages:
+  home-set:          "{prefix}&aДом {name} &aуспешно установлен!"
+  home-deleted:      "{prefix}&aДом {name} &aудалён."
+  home-not-found:    "{prefix}&cДом {name} &cне найден."
+  home-teleported:   "{prefix}&aТелепортация на дом {name}&a."
+  home-limit-reached: "{prefix}&cВы достигли лимита домов! ({used}&c/&c{limit}&c)"
+  home-already-exists: "{prefix}&cУ вас уже есть точка дома с именем {name}&c. Удалите её &7(/delhome {name})&c, чтобы поставить новую."
+  no-permission:     "{prefix}&cУ вас нет прав для этой команды."
+  player-not-found:  "{prefix}&cИгрок {nick} &cне найден или никогда не заходил."
+  limit-added:       "{prefix}&aИгроку {nick} &aдобавлено {amount} &aлимитов домов. Теперь: {total}"
+  limit-removed:     "{prefix}&aУ игрока {nick} &aудалено {amount} &aлимитов домов. Теперь: {total}"
+  admin-home-deleted: "{prefix}&aДом {name} &aигрока {nick} &aудалён."
+  admin-home-not-found: "{prefix}&cУ игрока {nick} &cнет дома {name}&c."
+  admin-teleported:  "{prefix}&aТелепортация на дом {name} &aигрока {nick}&a."
+  configs-reloaded:  "{prefix}&aКонфиги VillHome перезагружены."
+  player-info: |
+    {prefix}&7Игрок: {nick}
+    {prefix}&7Лимит: {limit}
+    {prefix}&7Использовано: {used}
+    {prefix}&7Дома: {homes}
+  usage-home:    "{prefix}&cИспользование: &f/home <название>"
+  usage-sethome: "{prefix}&cИспользование: &f/sethome <название>"
+  usage-delhome: "{prefix}&cИспользование: &f/delhome <название>"
+  usage-vh: |
+    {prefix}&f/vh addhomelimit &7<nick> <amount>
+    {prefix}&f/vh removehomelimit &7<nick> <amount>
+    {prefix}&f/vh gethome &7<nick>
+    {prefix}&f/vh tphome &7<nick> <name>
+    {prefix}&f/vh removehome &7<nick> <name>
+    {prefix}&f/vh reload
+    {prefix}&f/vh migration
