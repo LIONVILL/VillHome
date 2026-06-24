@@ -214,8 +214,6 @@ public class VhCommand implements CommandExecutor, TabCompleter {
         sender.sendMessage("§8§m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
         sender.sendMessage("  §7Версия:  §x§f§d§4§1§5§31.0.0");
         sender.sendMessage("  §7Автор:   §x§f§d§4§1§5§3Villoni");
-        sender.sendMessage("  §7Сервер:  §x§f§d§4§1§5§3villoni.ru");
-        sender.sendMessage("  §7Discord: §x§f§d§4§1§5§3discord.gg/villoni");
         sender.sendMessage("§8§m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     }
 
